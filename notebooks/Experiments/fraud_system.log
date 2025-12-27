@@ -1,1 +1,12 @@
 [2025-12-27 00:41:48] INFO [notebook_eda.<module>:22] Data loaded and timestamp converted.
+[2025-12-27 10:05:55] INFO [notebook_eda.<module>:22] Data loaded and timestamp converted.
+[2025-12-27 10:06:09] INFO [notebook_eda.engineer_initial_features:21] Initial features engineered: hour, day_of_week, is_midnight, amount_band, is_ussd
+[2025-12-27 10:15:46] INFO [notebook_eda.engineer_velocity_features:44] Velocity features engineered: tx_count_24h, total_spend_24h, amount_vs_avg_ratio
+[2025-12-27 10:18:11] INFO [notebook_eda.<module>:9] Feature Engineering Complete. Data saved to ../../data/nigerian_fraud_features.parquet
+[2025-12-27 10:42:56] INFO [model_training.<module>:18] Successfully loaded engineered features.
+[2025-12-27 10:43:48] INFO [model_training.<module>:20] Splitting complete. Fraud Ratio in Train: 0.0185
+[2025-12-27 10:53:38] INFO [model_training.<module>:17] Training XGBoost with scale_pos_weight: 53.20
+[2025-12-27 11:29:56] INFO [model_training.<module>:18] Successfully loaded engineered features.
+[2025-12-27 11:29:57] INFO [model_training.<module>:20] Splitting complete. Fraud Ratio in Train: 0.0185
+[2025-12-27 11:30:10] INFO [model_training.<module>:17] Training XGBoost with scale_pos_weight: 53.20
+[2025-12-27 11:39:32] INFO [model_training.<module>:14] Model and Encoders saved successfully to /models folder.
