@@ -1,5 +1,17 @@
+# --- Data & Math ---
 pandas
 numpy
+pyarrow
+fastparquet
+
+# --- Machine Learning ---
+scikit-learn
+xgboost
+joblib
+shap
+
+# --- Utilities ---
+python-dotenv
+faker
 matplotlib
 seaborn
-logging
