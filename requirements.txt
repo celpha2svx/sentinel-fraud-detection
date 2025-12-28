@@ -9,9 +9,17 @@ scikit-learn
 xgboost
 joblib
 shap
+lightgbm
+imbalanced-learn
 
 # --- Utilities ---
 python-dotenv
 faker
 matplotlib
 seaborn
+
+# --- API & Server ---
+fastapi
+uvicorn
+pydantic
+python-multipart
