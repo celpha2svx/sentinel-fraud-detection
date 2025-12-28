@@ -10,3 +10,63 @@
 [2025-12-27 11:29:57] INFO [model_training.<module>:20] Splitting complete. Fraud Ratio in Train: 0.0185
 [2025-12-27 11:30:10] INFO [model_training.<module>:17] Training XGBoost with scale_pos_weight: 53.20
 [2025-12-27 11:39:32] INFO [model_training.<module>:14] Model and Encoders saved successfully to /models folder.
+[2025-12-27 13:31:22] INFO [model_training.<module>:24] Successfully loaded engineered features.
+[2025-12-27 13:31:23] INFO [model_training.<module>:20] Splitting complete. Fraud Ratio in Train: 0.0185
+[2025-12-27 13:31:36] INFO [model_training.<module>:15] Training XGBoost with scale_pos_weight: 53.20
+[2025-12-27 13:31:53] INFO [model_training.<module>:11] Model and Encoders saved successfully to /models folder.
+[2025-12-27 13:45:44] INFO [model_training.<module>:25] Successfully loaded engineered features.
+[2025-12-27 13:45:44] INFO [model_training.<module>:20] Splitting complete. Fraud Ratio in Train: 0.0185
+[2025-12-27 13:45:53] INFO [model_training.<module>:15] Training XGBoost with scale_pos_weight: 53.20
+[2025-12-27 13:46:04] INFO [model_training.<module>:11] Model and Encoders saved successfully to /models folder.
+[2025-12-27 13:46:04] INFO [model_training.<module>:5] SMOTE complete: Fraud samples increased from 738 to 3926
+[2025-12-27 13:53:58] INFO [model_training.<module>:5] SMOTE complete: Fraud samples increased from 738 to 3926
+[2025-12-27 14:40:13] INFO [notebook_eda.<module>:22] Data loaded and timestamp converted.
+[2025-12-27 14:40:14] INFO [notebook_eda.engineer_initial_features:21] Initial features engineered: hour, day_of_week, is_midnight, amount_band, is_ussd
+[2025-12-27 14:40:16] INFO [notebook_eda.engineer_velocity_features:44] Velocity features engineered: tx_count_24h, total_spend_24h, amount_vs_avg_ratio
+[2025-12-27 14:41:46] INFO [notebook_eda.<module>:22] Data loaded and timestamp converted.
+[2025-12-27 14:41:47] INFO [notebook_eda.engineer_initial_features:21] Initial features engineered: hour, day_of_week, is_midnight, amount_band, is_ussd
+[2025-12-27 14:41:49] INFO [notebook_eda.engineer_velocity_features:44] Velocity features engineered: tx_count_24h, total_spend_24h, amount_vs_avg_ratio
+[2025-12-27 14:47:44] INFO [notebook_eda.<module>:22] Data loaded and timestamp converted.
+[2025-12-27 14:47:44] INFO [notebook_eda.engineer_initial_features:21] Initial features engineered: hour, day_of_week, is_midnight, amount_band, is_ussd
+[2025-12-27 14:47:46] INFO [notebook_eda.engineer_velocity_features:44] Velocity features engineered: tx_count_24h, total_spend_24h, amount_vs_avg_ratio
+[2025-12-27 14:49:26] INFO [notebook_eda.<module>:22] Data loaded and timestamp converted.
+[2025-12-27 14:49:26] INFO [notebook_eda.engineer_initial_features:21] Initial features engineered: hour, day_of_week, is_midnight, amount_band, is_ussd
+[2025-12-27 14:49:28] INFO [notebook_eda.engineer_velocity_features:44] Velocity features engineered: tx_count_24h, total_spend_24h, amount_vs_avg_ratio
+[2025-12-27 14:56:55] INFO [notebook_eda.<module>:22] Data loaded and timestamp converted.
+[2025-12-27 14:56:56] INFO [notebook_eda.engineer_initial_features:21] Initial features engineered: hour, day_of_week, is_midnight, amount_band, is_ussd
+[2025-12-27 14:56:58] INFO [notebook_eda.engineer_velocity_features:44] Velocity features engineered: tx_count_24h, total_spend_24h, amount_vs_avg_ratio
+[2025-12-27 15:01:44] INFO [notebook_eda.<module>:22] Data loaded and timestamp converted.
+[2025-12-27 15:01:45] INFO [notebook_eda.engineer_initial_features:21] Initial features engineered: hour, day_of_week, is_midnight, amount_band, is_ussd
+[2025-12-27 15:01:49] INFO [notebook_eda.engineer_velocity_features:44] Velocity features engineered: tx_count_24h, total_spend_24h, amount_vs_avg_ratio
+[2025-12-27 15:01:53] INFO [notebook_eda.<module>:9] Gold Data Saved! Shape: (50000, 16)
+[2025-12-27 15:02:45] INFO [model_training.<module>:25] Successfully loaded engineered features.
+[2025-12-27 15:02:45] INFO [model_training.<module>:20] Splitting complete. Fraud Ratio in Train: 0.0185
+[2025-12-27 15:02:55] INFO [model_training.<module>:15] Training XGBoost with scale_pos_weight: 53.20
+[2025-12-27 15:03:04] INFO [model_training.<module>:11] Model and Encoders saved successfully to /models folder.
+[2025-12-27 15:03:04] INFO [model_training.<module>:5] SMOTE complete: Fraud samples increased from 738 to 3926
+[2025-12-27 16:56:15] INFO [model_training.<module>:27] Successfully loaded engineered features.
+[2025-12-27 16:56:16] INFO [model_training.<module>:20] Preparation complete. Training set expanded to 46556 rows.
+[2025-12-27 17:02:34] INFO [model_training.<module>:28] Successfully loaded engineered features.
+[2025-12-27 17:02:35] INFO [model_training.<module>:20] Preparation complete. Training set expanded to 46556 rows.
+[2025-12-27 17:02:36] INFO [model_training.<module>:20] Training Ensemble Committee...
+[2025-12-27 17:24:14] INFO [model_training.<module>:28] Successfully loaded engineered features.
+[2025-12-27 17:24:15] INFO [model_training.<module>:21] Preparation complete. Training set expanded to 46556 rows.
+[2025-12-27 17:24:16] INFO [model_training.<module>:20] Training Ensemble Committee...
+[2025-12-27 17:39:33] INFO [notebook_eda.<module>:22] Data loaded and timestamp converted.
+[2025-12-27 17:39:33] INFO [notebook_eda.engineer_initial_features:21] Initial features engineered: hour, day_of_week, is_midnight, amount_band, is_ussd
+[2025-12-27 17:39:36] INFO [notebook_eda.engineer_velocity_features:44] Velocity features engineered: tx_count_24h, total_spend_24h, amount_vs_avg_ratio
+[2025-12-27 17:39:40] INFO [notebook_eda.<module>:9] Gold Data Saved! Shape: (55200, 16)
+[2025-12-27 17:40:31] INFO [model_training.<module>:28] Successfully loaded engineered features.
+[2025-12-27 23:49:57] INFO [model_training.<module>:28] Successfully loaded engineered features.
+[2025-12-27 23:49:58] INFO [model_training.<module>:21] Preparation complete. Training set expanded to 49158 rows.
+[2025-12-27 23:49:58] INFO [model_training.<module>:20] Training Ensemble Committee...
+[2025-12-28 00:53:44] INFO [model_training.<module>:28] Successfully loaded engineered features.
+[2025-12-28 00:53:46] INFO [model_training.<module>:23] Encoders stored for ['channel', 'location', 'sender_bank', 'amount_band']
+[2025-12-28 00:53:46] INFO [model_training.<module>:20] Training Ensemble Committee...
+[2025-12-28 01:01:05] INFO [model_training.<module>:28] Successfully loaded engineered features.
+[2025-12-28 01:01:06] INFO [model_training.<module>:23] Encoders stored for ['channel', 'location', 'sender_bank', 'amount_band']
+[2025-12-28 01:01:06] INFO [model_training.<module>:20] Training Ensemble Committee...
+[2025-12-28 01:07:19] INFO [model_training.<module>:28] Successfully loaded engineered features.
+[2025-12-28 01:07:20] INFO [model_training.<module>:23] Encoders stored for ['channel', 'location', 'sender_bank', 'amount_band']
+[2025-12-28 01:07:20] INFO [model_training.<module>:20] Training Ensemble Committee...
+[2025-12-28 01:07:34] INFO [model_training.<module>:35] Complete Model Artifact saved with Encoders and Metadata.
