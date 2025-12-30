@@ -15,7 +15,7 @@ from pathlib  import Path
 from dotenv import load_dotenv
 
 # Import functions
-from api.core_function import (
+from core_function import (
     Transaction, RiskLevel, Action,
     process_single_txn, generate_shap_explanation
 )
