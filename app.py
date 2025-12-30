@@ -51,7 +51,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parent
 # LOAD MODEL ARTIFACTS
 try:
     model_path = os.path.join(BASE_DIR,"models","sentinel_v3_PRODUCTION.joblib")
@@ -600,4 +600,4 @@ def clear_cache(cache_type: str = "all"):
 
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=7860)
