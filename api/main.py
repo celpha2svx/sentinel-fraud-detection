@@ -11,6 +11,7 @@ import logging
 import uuid
 import json
 import os
+from pathlib  import Path
 from dotenv import load_dotenv
 
 # Import functions
@@ -50,10 +51,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-
+BASE_DIR = Path(__file__).resolve().parent.parent
 # LOAD MODEL ARTIFACTS
 try:
-    model_path = "models/sentinel_v3_PRODUCTION.joblib"
+    model_path = os.path.join(BASE_DIR,"models","sentinel_v3_PRODUCTION.joblib")
     artifact = joblib.load(model_path)
 
     model = artifact['model']
