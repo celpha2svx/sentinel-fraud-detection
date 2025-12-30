@@ -88,9 +88,6 @@ We don't just chase high accuracy; we chase **Precision**. In fraud detection, a
 
 ```text
 sentinel-fraud-detection/
-├── api/
-│   ├── core_function.py      # Decision logic & SHAP generators
-│   └── main.py               # FastAPI production server
 ├── data/
 │   ├── nigerian_fraud_sent   # Processed features (Parquet)
 │   └── nigerian_transactions # Raw transaction data
@@ -106,6 +103,8 @@ sentinel-fraud-detection/
 │   ├── generator.py          # Synthetic data generation logic
 │   ├── logger.py             # Custom logging utility
 │   └── predictor.py          # Inference wrapper logic
+└── main.py               # FastAPI production server
+├── core_function.py      # Decision logic & SHAP generators
 ├── .env                      # API keys & Configuration
 ├── Features.md               # Detailed feature documentation
 ├── Procfile                  # Deployment configuration
