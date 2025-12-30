@@ -345,3 +345,134 @@ weighted avg      0.979     0.979     0.978     15000
 [2025-12-30 03:47:49] INFO [time_based_split.<module>:17] False Alarms: 0
 [2025-12-30 03:47:49] INFO [time_based_split.<module>:21] 
 AUC-ROC: 0.9679
+[2025-12-30 09:45:01] INFO [model_training.<module>:28] Total transactions: 75000
+[2025-12-30 09:45:01] INFO [model_training.<module>:29] Fraud rate: 17.62%
+[2025-12-30 09:45:01] INFO [model_training.<module>:30] Fraud cases: 13212
+[2025-12-30 09:45:01] INFO [model_training.<module>:31] Successfully loaded engineered features.
+[2025-12-30 09:45:01] INFO [time_based_split.<module>:8] 
+Train: 60000 | Test: 15000
+[2025-12-30 09:45:01] INFO [time_based_split.<module>:28] Encoders stored for ['channel', 'location', 'sender_bank']
+[2025-12-30 09:45:01] INFO [time_based_split.<module>:43] 
+FEATURE STATISTICS (Training):
+[2025-12-30 09:45:02] INFO [time_based_split.<module>:44]               amount  user_avg_amount  user_balance       channel  \
+count   60000.000000     60000.000000  6.000000e+04  60000.000000   
+mean    15501.928639     12508.204147  7.936879e+05      0.777883   
+std     13770.372316      7761.091412  4.066746e+05      0.839599   
+min       500.000000      2063.700000  8.064229e+04      0.000000   
+25%      6532.410000      6600.950000  4.469744e+05      0.000000   
+50%     11218.025000     10126.100000  7.930576e+05      1.000000   
+75%     20343.847500     17832.300000  1.150105e+06      2.000000   
+max    169453.550000     29964.650000  1.499755e+06      2.000000   
+
+           location  sender_bank    bvn_linked  device_changed  \
+count  60000.000000  60000.00000  60000.000000    60000.000000   
+mean       1.984950      2.42290      0.839100        0.049300   
+std        1.417153      1.70929      0.367442        0.216495   
+min        0.000000      0.00000      0.000000        0.000000   
+25%        1.000000      1.00000      1.000000        0.000000   
+50%        2.000000      2.00000      1.000000        0.000000   
+75%        3.000000      4.00000      1.000000        0.000000   
+max        4.000000      5.00000      1.000000        1.000000   
+
+       failed_attempts_24h   tx_count_1h  ...       is_ussd  total_spend_24h  \
+count         60000.000000  60000.000000  ...  60000.000000     60000.000000   
+mean              8.434050     21.607100  ...      0.266067     33436.660095   
+std               7.509693     14.492812  ...      0.441903     34260.067500   
+min               0.000000      1.000000  ...      0.000000         0.000000   
+25%               2.000000      9.000000  ...      0.000000     11787.942500   
+50%               7.000000     19.000000  ...      0.000000     22479.295000   
+75%              13.000000     32.000000  ...      1.000000     42490.905000   
+max              54.000000     71.000000  ...      1.000000    498331.360000   
+
+       amt_to_user_avg_ratio  pct_of_balance  location_avg_30d  \
+count           60000.000000    60000.000000      60000.000000   
+mean                1.237355        3.142044      16178.348581   
+std                 0.660777        4.642433       3584.670317   
+min                 0.016747        0.033456          0.000000   
+25%                 0.842956        0.790814      14347.103640   
+50%                 1.080547        1.642355      15206.486725   
+75%                 1.378838        3.529575      15976.561400   
+max                 5.861960      100.000000      37784.940000   
+
+       amt_to_location_avg_ratio  channel_velocity_1h  pct_balance_withdrawn  \
+count               60000.000000         60000.000000           60000.000000   
+mean                    0.991652             1.048183               0.031425   
+std                     0.909193             0.219991               0.046540   
+min                     0.000000             0.000000               0.000335   
+25%                     0.403104             1.000000               0.007908   
+50%                     0.711280             1.000000               0.016424   
+75%                     1.288231             1.000000               0.035296   
+max                    12.945155             4.000000               1.178148   
+
+        tx_per_hour  is_midnight_high_value  
+count  60000.000000                 60000.0  
+mean       1.048200                     0.0  
+std        0.219949                     0.0  
+min        1.000000                     0.0  
+25%        1.000000                     0.0  
+50%        1.000000                     0.0  
+75%        1.000000                     0.0  
+max        4.000000                     0.0  
+
+[8 rows x 26 columns]
+[2025-12-30 09:45:05] INFO [time_based_split.<module>:51] 
+Top 5 Most Different Features:
+[2025-12-30 09:45:05] INFO [time_based_split.<module>:52] user_balance        42629.995610
+total_spend_24h       508.318312
+location_avg_30d      141.668823
+user_avg_amount       137.759853
+amount                 39.464682
+dtype: float64
+[2025-12-30 09:45:06] INFO [time_based_split.<module>:58] Time-based split completed. Training data balanced with SMOTE.
+[2025-12-30 09:45:06] INFO [time_based_split.<module>:59] is_fraud
+0    49449
+1    29669
+Name: count, dtype: int64
+[2025-12-30 09:45:06] INFO [time_based_split.<module>:60] Fraud %: 37.5%
+[2025-12-30 09:45:06] INFO [time_based_split.<module>:44] Training Calibrated Ensemble...
+[2025-12-30 09:46:15] INFO [time_based_split.<module>:13]               precision    recall  f1-score   support
+
+           0      0.977     0.932     0.954     12339
+           1      0.741     0.899     0.812      2661
+
+    accuracy                          0.926     15000
+   macro avg      0.859     0.916     0.883     15000
+weighted avg      0.935     0.926     0.929     15000
+
+[2025-12-30 09:46:15] INFO [time_based_split.<module>:16] Fraud Caught: 2392 / 2661
+[2025-12-30 09:46:15] INFO [time_based_split.<module>:17] False Alarms: 836
+[2025-12-30 09:46:15] INFO [time_based_split.<module>:13]               precision    recall  f1-score   support
+
+           0      0.975     0.992     0.984     12339
+           1      0.962     0.881     0.920      2661
+
+    accuracy                          0.973     15000
+   macro avg      0.968     0.937     0.952     15000
+weighted avg      0.973     0.973     0.972     15000
+
+[2025-12-30 09:46:15] INFO [time_based_split.<module>:16] Fraud Caught: 2345 / 2661
+[2025-12-30 09:46:15] INFO [time_based_split.<module>:17] False Alarms: 93
+[2025-12-30 09:46:15] INFO [time_based_split.<module>:13]               precision    recall  f1-score   support
+
+           0      0.975     1.000     0.987     12339
+           1      0.998     0.879     0.935      2661
+
+    accuracy                          0.978     15000
+   macro avg      0.986     0.939     0.961     15000
+weighted avg      0.979     0.978     0.978     15000
+
+[2025-12-30 09:46:15] INFO [time_based_split.<module>:16] Fraud Caught: 2339 / 2661
+[2025-12-30 09:46:15] INFO [time_based_split.<module>:17] False Alarms: 4
+[2025-12-30 09:46:15] INFO [time_based_split.<module>:13]               precision    recall  f1-score   support
+
+           0      0.975     1.000     0.987     12339
+           1      1.000     0.879     0.936      2661
+
+    accuracy                          0.979     15000
+   macro avg      0.987     0.939     0.961     15000
+weighted avg      0.979     0.979     0.978     15000
+
+[2025-12-30 09:46:15] INFO [time_based_split.<module>:16] Fraud Caught: 2339 / 2661
+[2025-12-30 09:46:15] INFO [time_based_split.<module>:17] False Alarms: 0
+[2025-12-30 09:46:15] INFO [time_based_split.<module>:21] 
+AUC-ROC: 0.9679
