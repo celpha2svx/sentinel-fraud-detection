@@ -17,9 +17,11 @@ python-dotenv
 faker
 matplotlib
 seaborn
+redis
 
 # --- API & Server ---
 fastapi
 uvicorn
 pydantic
 python-multipart
+httpx

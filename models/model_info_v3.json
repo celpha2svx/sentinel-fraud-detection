@@ -1,0 +1,51 @@
+{
+    "version": "v3.0-PRODUCTION",
+    "trained_date": "2025-12-30 09:46:32",
+    "features": [
+        "amount",
+        "user_avg_amount",
+        "user_balance",
+        "channel",
+        "location",
+        "sender_bank",
+        "bvn_linked",
+        "device_changed",
+        "failed_attempts_24h",
+        "tx_count_1h",
+        "tx_count_24h",
+        "hour",
+        "day_of_week",
+        "day",
+        "is_midnight",
+        "is_salary_window",
+        "is_ussd",
+        "total_spend_24h",
+        "amt_to_user_avg_ratio",
+        "pct_of_balance",
+        "location_avg_30d",
+        "amt_to_location_avg_ratio",
+        "channel_velocity_1h",
+        "pct_balance_withdrawn",
+        "tx_per_hour",
+        "is_midnight_high_value"
+    ],
+    "thresholds": {
+        "block": 0.8,
+        "review": 0.5,
+        "allow": 0.0
+    },
+    "performance": {
+        "auc_roc": 0.9679,
+        "precision": 0.998,
+        "recall": 0.879,
+        "false_positive_rate": 0.0003
+    },
+    "test_results": {
+        "grandma_legit": 0.0112,
+        "midnight_sweeper_fraud": 0.9896,
+        "velocity_bot_fraud": 0.9175,
+        "salary_splurge_legit": 0.016,
+        "new_device_fraud": 0.8807,
+        "account_takeover": 0.98
+    }
+}
