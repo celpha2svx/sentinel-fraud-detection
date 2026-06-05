@@ -124,7 +124,7 @@ sentinel-fraud-detection/
 ### Installation
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/yourusername/sentinel-fraud-detection.git](https://github.com/yourusername/sentinel-fraud-detection.git)
+   git clone https://github.com/celpha2svx/sentinel-fraud-detection.git
    cd sentinel-fraud-detection
    
 2. Set up the virtual environment:python -m venv venv
